@@ -1668,8 +1668,6 @@ T e m p l a t e M o
                 const currentScroll = scrollContainer.scrollTop;
                 const sectionHeight = window.innerHeight;
                 const isLastSection = currentScroll >= (sections.length - 2) * sectionHeight;
-
-                debugger;
                 if (!isLastSection) {
                     event.preventDefault(); // Prevent default scroll behavior for vertical sections
                     const currentSection = Math.round(currentScroll / sectionHeight);

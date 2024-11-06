@@ -426,7 +426,7 @@ strong {
 }
 .custom-btn span{
   line-height: 22px;
-  font-family: 'PFBeauSansPro-SemiBold';
+  font-family: var(--font-family-semibold);
   letter-spacing: 0.5px;
   font-size: 15px;
 }
@@ -494,7 +494,7 @@ strong {
   margin: 13px;
   padding: 0px;
   line-height: 22px;
-  font-family: 'PFBeauSansPro-SemiBold';    
+  font-family: var(--font-family-semibold);    
   letter-spacing: 0.5px;
   font-size: 15px;
 }
@@ -671,7 +671,7 @@ strong {
   border-radius: 2px;
   text-align: center;
   overflow: hidden;
-  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   max-height: 74px; /* Adjust this to fit the initial visible content */
   padding: 18px 16px 16px;
   background-color: #fff;
