@@ -152,7 +152,7 @@
                                 <br/>
                                 <span class="idc-secondary-10">provider for digital transformation</span>
                             </h1>
-                            <a data-aos="fade-up" data-aos-duration="1200" class="btn custom-btn custom-btn-outline smoothscroll" title="Get Advice" href="#get-advice">Get Advice</a>
+                            <a data-aos="fade-up" data-aos-duration="1200" class="btn custom-btn custom-btn-outline smoothscroll" title="Get Advice" onclick="openForm()">Get Advice</a>
                         </div>
                     </div>
                 </div>
@@ -1418,6 +1418,53 @@ display: block; width: 200px;">
             </div>
          </section>
         <!-- END: F&Q -->
+         <modal>
+            <div class="overlay" id="formPopup">
+                <div class="popup">
+                    <div class="text-center">
+                        <h2 
+                         class="section-title fade-text" style="margin-bottom: 16px;" data-delay="0">
+                            Expand your horizons
+                        </h2> 
+                        <p class="section-subtitle fade-text" data-delay="0.2">
+                            Viettel IDC is always ready to support
+                    </p>
+                    <form class="idc-form-advice fade-text" data-delay="0.3">
+                        <div class="row mb-4">
+                            <div class="col-12 col-input">
+                                <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                <label for="name" class="form__label">Name<span class="idc-primary-60">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-input">
+                                <input type="input" class="form__field" placeholder="Phone Number" name="phoneno" id='phoneno' required />
+                                <label for="phoneno" class="form__label">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-input">
+                                <input type="input" class="form__field" placeholder="Email" name="email" id='email' required />
+                                <label for="email" class="form__label">Email<span class="idc-primary-60">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-input">
+                                <input type="input" class="form__field" placeholder="Title" name="title" id='title' required />
+                                <label for="title" class="form__label">Title<span class="idc-primary-60">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-input">
+                                <textarea name="advice" id="advice" placeholder="Ask for advice" class="form__field" rows="5" required></textarea>
+                                <label class="form__label" for="advice">Ask for advice <span class="idc-primary-60">*</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="idc-btn-primary">Get advice</button>
+                    </form>
+                </div>
+            </div>
+         </modal>
     </main>
 
     <!--
@@ -1638,36 +1685,12 @@ T e m p l a t e M o
                     scrollContainer.style.overflowY = 'auto'; // Enable vertical scrolling for the last section
                 }
             });
-            // const scrollContainer = document.getElementById('scrollContainer');
-            // const sections = document.querySelectorAll('.scroll-section');
             
-            // scrollContainer.addEventListener('wheel', (event) => {
-            //     debugger;
-            //     event.preventDefault(); // Prevent default scroll behavior
-            //     let sectionHeight = window.innerHeight;
-            //     const currentScroll = scrollContainer.scrollTop;
-            //     const delta = Math.sign(event.deltaY); // Get scroll direction
-            //     const isLastSection = currentScroll >= (sections.length - 2) * sectionHeight;
-            //     if(isLastSection){
-            //         sectionHeight = $('#news .row')[0].clientHeight;
-            //     }
-            //     // Determine next section index
-            //     const currentSection = Math.round(scrollContainer.scrollTop / window.innerHeight);
-            //     const nextSection = Math.max(0, Math.min(sections.length - 1, currentSection + delta));
-            //     if(currentSection < nextSection){
-            //         // Smoothly scroll to the next section
-            //         scrollContainer.scrollTo({
-            //             top: nextSection * sectionHeight,
-            //             behavior: 'smooth'
-            //         });
-            //     }else{
-            //         scrollContainer.clientHeight = sectionHeight;
-            //         scrollContainer.offsetHeight = sectionHeight;
-            //         scrollContainer.scrollTo({
-            //             behavior: 'smooth',
-            //         });
-            //     }
-            // });
+            document.getElementById('formPopup').addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeForm();
+                }
+            });
         }
         
         const solutionImages = document.querySelectorAll(".img");
@@ -1705,6 +1728,14 @@ T e m p l a t e M o
                 }
             }
         })
+
+        function openForm() {
+            document.getElementById('formPopup').style.display = 'flex';
+        }
+
+        function closeForm() {
+            document.getElementById('formPopup').style.display = 'none';
+        }
     </script>
 </body>
 
