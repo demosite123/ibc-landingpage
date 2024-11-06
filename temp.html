@@ -3,46 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Hover Effect on Page Load</title>
+    <title>Owl Carousel Replace Example</title>
+    <link rel="stylesheet" href="path/to/owl.carousel.min.css">
+    <link rel="stylesheet" href="path/to/owl.theme.default.min.css">
     <style>
-        .container {
-            display: flex;
-        }
-
-        .container div {
-            flex: 1;
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
             margin: 10px;
-            padding: 20px;
-            background-color: #f0f0f0;
+            color: white;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .container div:hover,
-        .container div:hover ~ div {
-            flex: 2;
-            background-color: #d0d0d0;
-        }
-
-        .container div:first-child {
-            animation: expand 0.3s forwards;
-        }
-
-        @keyframes expand {
-            to {
-                flex: 2;
-                background-color: #d0d0d0;
-            }
+            line-height: 200px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div>First Div</div>
-    <div>Second Div</div>
-    <div>Third Div</div>
+<div class="owl-carousel owl-theme">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
 </div>
+
+<script src="js/new/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var $carousel = $('.owl-carousel');
+        $carousel.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1
+        });
+
+        var newItems = [
+            '<div class="item">4</div>',
+            '<div class="item">5</div>',
+            '<div class="item">6</div>'
+        ];
+
+        // Log to ensure newItems is an array and contains valid HTML elements
+        console.log(newItems);
+
+        // Replace the carousel content
+        $carousel.trigger('replace.owl.carousel', [newItems]).trigger('refresh.owl.carousel');
+    });
+</script>
 
 </body>
 </html>

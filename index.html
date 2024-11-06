@@ -1050,13 +1050,13 @@ display: block; width: 200px;">
                     <div class="col-12 section-padding-small fade-text" data-delay="0.2">
                         <div class="idc-awards-indicator">
                             <div class="row">
-                                <button onclick="rebindingAwardsData('group1')" class="col-4 font-weight-bold idc-awards-indicator-item active">
+                                <button type="button" data-group="group1" class="col-4 font-weight-bold idc-awards-indicator-item active">
                                     Cloud Awards
                                 </button>
-                                <button onclick="rebindingAwardsData('group2')" class="col-4 font-weight-bold idc-awards-indicator-item">
+                                <button type="button" data-group="group2" class="col-4 font-weight-bold idc-awards-indicator-item">
                                     Data Center Awards
                                 </button>
-                                <button onclick="rebindingAwardsData('group3')" class="col-4 font-weight-bold idc-awards-indicator-item">
+                                <button type="button" data-group="group3" class="col-4 font-weight-bold idc-awards-indicator-item">
                                     Technology Awards
                                 </button>
                             </div>
@@ -1321,7 +1321,7 @@ display: block; width: 200px;">
          </section>
         <!-- END: F&Q -->
         <!-- NEWS -->
-         <section id="news" class="section-padding scroll-section fade-text" data-delay="0">
+         <section id="news" class="section-padding scroll-section fade-text" data-delay="0" style="height: fit-content !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1412,18 +1412,190 @@ display: block; width: 200px;">
                                     </div>
                                 </div>
                             </div>
-
-                        <div class="row" >
-                            <div class="col-12" style="display: flex;">
-                                <a href="#" onclick="viewMore()" class="btn custom-btn d-lg-block d-none"><span>See more</span></a>
+                            <div class="row hidden-news">
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold" >
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news1.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold">
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news2.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold">
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row hidden-news">
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold" >
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news1.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold">
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="news-wrapper news-wrapper-body">
+                                        <div class="news-image-wrapper">
+                                            <a href="#" class="news-image" 
+                                            style="background-image: url(./img/news2.svg)"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <p class="news-content-title font-weight-bold">
+                                                <a href="#">Comprehensive data security with Viettel IDC</a>
+                                            </p>
+                                        </div>
+                                        <div class="news-date-wrapper">
+                                            <img src="/img/news-time.svg">
+                                            <span class="news-note" style="margin-top: 0px;">14/10/2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id ="view-more-btn" >
+                                <div class="col-12" style="justify-content: center;display: flex;">
+                                    <a href="#" onclick="viewMore()" class="btn custom-btn d-lg-block d-none"><span>See more</span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
          </section>
         <!-- END: F&Q -->
+
+        <!-- FOOTER -->
+         <footer>
+            <div class="footer scroll-section" id="footer" style="height: fit-content !important;">
+                <div class="container">
+                    <div class="column">
+                        <h3>Viettel IDC</h3>
+                        <p>Cơ quan chủ quản: Công ty TNHH Viettel - CHT (Viettel IDC), trực thuộc Tập đoàn Công nghiệp - Viễn thông Quân đội.</p>
+                        <p>Mã số doanh nghiệp: 0500589150 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 11/04/2008, sửa đổi lần thứ 8 ngày 14/10/2022.</p>
+                        <p>Chịu trách nhiệm nội dung: Ông Hoàng Văn Ngọc.</p>
+                        <p><strong>Hotline:</strong> 1800 8088</p>
+                        <p><strong>Email:</strong> <a href="mailto:support@viettelidc.com.vn">support@viettelidc.com.vn</a></p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-zalo"></i></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3>Dịch vụ nổi bật</h3>
+                        <p>Viettel Cloud Server</p>
+                        <p>Viettel Virtual Private Cloud</p>
+                        <p>Viettel Cloud Object Storage</p>
+                        <p>Viettel Cloud Backup</p>
+                        <p>Viettel Media CDN</p>
+                        <p>Thuê chỗ đặt thiết bị</p>
+                        <p>Viettel Hybrid Connect</p>
+                        <p>Viettel Cloud Desktop</p>
+                        <p>Viettel Cloud File Storage</p>
+                    </div>
+                    <div class="column">
+                        <h3>Giải pháp</h3>
+                        <p>Sao lưu & Dự phòng dữ liệu</p>
+                        <p>Chuyển đổi hạ tầng Cloud</p>
+                        <p>Container</p>
+                        <p>Mạng phân phối nội dung</p>
+                        <p>Phát triển & Vận hành</p>
+                        <p>Đám mây hiệu năng cao</p>
+                        <p>Giám sát & Ứng dụng AI</p>
+                        <p>Làm việc di động</p>
+                        <p>Xây dựng Website</p>
+                    </div>
+                    <div class="column">
+                        <h3>Trợ giúp</h3>
+                        <p>Liên hệ hỗ trợ, khiếu nại</p>
+                        <p>Hỗ trợ sử dụng dịch vụ</p>
+                        <p>Hệ thống Quản trị dịch vụ</p>
+                        <p>Thỏa thuận sử dụng</p>
+                        <p>Cách đăng ký dịch vụ máy chủ ảo</p>
+                        <p>Các hình thức thanh toán</p>
+                        <p>Hướng dẫn gia hạn dịch vụ</p>
+                        <p>Chương trình ưu đãi, khuyến mại</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>© Bản quyền thuộc về: Công ty TNHH Viettel - CHT</p>
+                    <img src="/img/300.svg" alt="Logo 1">
+                    <img src="/img/300.svg" alt="Logo 2">
+                    <img src="/img/300.svg" alt="Logo 3">
+                    <img src="/img/300.svg" alt="Logo 4">
+                </div>
+            </div>
+         </footer>
+        <!-- END: FOOTER -->
          <modal>
             <div class="overlay" id="formPopup">
                 <div class="popup">
@@ -1499,6 +1671,14 @@ T e m p l a t e M o
     </script>
     <script>
         const solutionImages = document.querySelectorAll(".img");
+        var listData = [
+                { groupId: 'group1', img: 'img/award.svg', year: '2024', name : 'Cybersecurity Excellence Awards 2024', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group1', img: 'img/award.svg', year: '2024', name : 'Cybersecurity Excellence Awards 2024', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group1', img: 'img/award.svg', year: '2022', name : 'Cybersecurity Excellence Awards 2022', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group2', img: 'img/award.svg', year: '2022', name : 'Cybersecurity Excellence Awards 2022', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group2', img: 'img/award.svg', year: '2023', name : 'Cybersecurity Excellence Awards 2023', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group3', img: 'img/award.svg', year: '2023', name : 'Cybersecurity Excellence Awards 2023', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+            ];
         document.addEventListener('DOMContentLoaded', () => {
             const fadeTexts = document.querySelectorAll('.fade-text');
 
@@ -1521,38 +1701,16 @@ T e m p l a t e M o
 
             // region AWARDS
             const buttons = document.querySelectorAll('.idc-awards-indicator-item');
-            const allItems = document.querySelectorAll('#award-carousel .item');
 
 
             buttons.forEach(button => {
                 button.addEventListener('click', function () {
                     const group = button.getAttribute('data-group');
-                    filterItems(group);
+                    rebindingAwardsData(group);
                 });
             });
 
-            function filterItems(group) {
-                // Hide all items first
-                allItems.forEach(item => {
-                    item.style.display = 'none';
-                    item.parentElement.classList.remove('active');
-                    item.classList.remove('active');
-                });
-
-                // Show items of the selected group
-                const groupItems = document.querySelectorAll(`#award-carousel .item.${group}`);
-                groupItems.forEach((item, index) => {
-                    item.style.display = 'flex';
-                    if (index === 0) {
-                        item.parentElement.classList.add('active');
-                        item.classList.add('active');
-                    }
-                });
-            }
-
-            // Initialize the carousel with the first group
-            filterItems('group1');
-
+            rebindingAwardsData("group1")
         });
         $(document).ready(function(){
             $('.menu-root').hover(function(){
@@ -1612,8 +1770,7 @@ T e m p l a t e M o
                 }
             });
             awardCarousel.on('translated.owl.carousel', function(event) {
-                alert("slider");
-                // Additional actions to perform after translation
+                
             });
 
             var solutionMobCarousel =  $("#solution-mobile-carousel");
@@ -1649,22 +1806,56 @@ T e m p l a t e M o
         const rebindingAwardsData = (groundId) =>{
             var awardCarousel =  $("#award-carousel");
             // Fetch new data (example data here, replace with your data fetching logic)
-            var newData = [
-                { id: 4, content: 'New 1' },
-                { id: 5, content: 'New 2' },
-                { id: 6, content: 'New 3' }
-            ];
+            var dataFilterByGroupId = listData.filter(x => x.groupId == groundId);
 
             // Clear current items
-            awardCarousel.trigger('replace.owl.carousel', '').trigger('refresh.owl.carousel');
+            awardCarousel.trigger('replace.owl.carousel', [[]]).trigger('refresh.owl.carousel');
 
             // Add new items
-            $.each(newData, function(index, item) {
-                awardCarousel.trigger('add.owl.carousel', ['<div class="item"><h4>' + item.content + '</h4></div>']);
+            $.each(dataFilterByGroupId, function(index, item) {
+                awardCarousel.trigger('add.owl.carousel', 
+                [`<div class="item ${groundId}">
+                    <div class="card">
+                        <img src="${item.img}" class="card-img-top" alt="${item.img}">
+                        <div class="card-body">
+                            <h5 class="card-title idc-secondary-70" style="font-size: 30px; font-weight: bold; line-height: 36px;">${item.year}</h5>
+                            <h5 class="card-title" style="margin: 16px;">${item.name}</h5>
+                            <p class="card-text idc-secondary-60">${item.content}</p>
+                            </div>
+                        </div>
+                </div>` ]);
             });
 
             // Refresh to update the carousel display
             awardCarousel.trigger('refresh.owl.carousel');
+            awardCarousel.owlCarousel({
+                autoplay: false,
+                rewind: true, /* use rewind if you don't want loop */
+                margin: 20,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                pagination:false,
+                navigation:true,
+                navText: [
+                    "",
+                    ""
+                ],
+                autoHeight: true,
+                autoplayTimeout: 7000,
+                smartSpeed: 800,
+                nav: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    576:{
+                        items:2
+                    },
+                    768:{
+                        items:3
+                    }
+                }
+            });
         }
 
         const init = function(){
@@ -1672,11 +1863,13 @@ T e m p l a t e M o
             const sections = document.querySelectorAll('.scroll-section');
 
             scrollContainer.addEventListener('wheel', (event) => {
+                debugger;
                 const delta = Math.sign(event.deltaY);
                 const currentScroll = scrollContainer.scrollTop;
                 const sectionHeight = window.innerHeight;
+                const isNewsSection = currentScroll >= (sections.length - 3) * sectionHeight;
                 const isLastSection = currentScroll >= (sections.length - 2) * sectionHeight;
-                if (!isLastSection) {
+                if (!isLastSection && !isNewsSection) {
                     event.preventDefault(); // Prevent default scroll behavior for vertical sections
                     const currentSection = Math.round(currentScroll / sectionHeight);
                     const nextSection = Math.max(0, Math.min(sections.length - 1, currentSection + delta));
@@ -1685,8 +1878,12 @@ T e m p l a t e M o
                     top: nextSection * sectionHeight,
                     behavior: 'smooth'
                     });
-                } else if (isLastSection && delta > 0) {
-                    const lastSection = document.getElementById('news');
+                } else if (isNewsSection && delta > 0) {
+                    const newSection = document.getElementById('news');
+                    newSection.style.height = 'fit-content';
+                    scrollContainer.style.overflowY = 'auto'; // Enable vertical scrolling for the last section
+                }else if (isLastSection && delta > 0) {
+                    const lastSection = document.getElementById('footer');
                     lastSection.style.height = 'fit-content';
                     scrollContainer.style.overflowY = 'auto'; // Enable vertical scrolling for the last section
                 }
@@ -1758,6 +1955,17 @@ T e m p l a t e M o
 
         function closeForm() {
             document.getElementById('formPopup').style.display = 'none';
+        }
+
+        function viewMore() {
+            const hiddenNewsGroup = document.querySelectorAll('.hidden-news');
+            if(hiddenNewsGroup && hiddenNewsGroup != undefined && hiddenNewsGroup.length > 0){
+                hiddenNewsGroup[0].classList.remove("hidden-news");
+            }
+            if(hiddenNewsGroup.length <= 1){
+                var viewMoreBtn = document.getElementById('view-more-btn');
+                viewMoreBtn.style.display = 'none';
+            }
         }
     </script>
 </body>

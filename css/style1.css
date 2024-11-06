@@ -852,9 +852,9 @@
   transform: none;
   transform-origin: 50% 50% 0px;
 }
-#partners .logo-partner{height: 100.35px;}
+#partners .logo-partner{height: 100.35px; background-color: #ffffff;}
 #partners .marquee .logo-partner{
-  display: grid;
+  display: grid; 
     place-items: center;
     width: 242px;
     fill: var(--color-text);

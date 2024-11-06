@@ -864,6 +864,7 @@ strong {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /*---------------------------------------
   NEWS              
 -----------------------------------------*/
@@ -945,6 +946,60 @@ strong {
 }
 .news-list .news-wrapper{
   margin-top: 15px;
+}
+.news-wrapper .row{
+  transition: transform 0.3s ease-out;
+}
+.hidden-news{
+  display: none;
+}
+/*---------------------------------------
+  FOOTER              
+-----------------------------------------*/
+.footer {
+  background-color: #f1f1f1;
+  padding: 40px;
+  color: #333;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .column {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+.footer h3 {
+  color: #E60000;
+  margin-bottom: 10px;
+}
+.footer p, .footer a {
+  color: #333;
+  text-decoration: none;
+}
+.footer .social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+.footer .social-icons a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 24px;
+}
+.footer .social-icons a:hover {
+  color: #E60000;
+}
+.footer .bottom {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+.footer .bottom img {
+  margin: 0 5px;
+  vertical-align: middle;
 }
 /*---------------------------------------
   ANIMATION               
