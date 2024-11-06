@@ -211,28 +211,7 @@
       padding-right: 0%;
       margin-bottom: 16px;
     }
-    /* .why-us-content {
-      max-height: 200px; 
-      width: inherit;
-      border: 0.5px solid var(--secondary-color-40);
-      border-radius: 2px;
-      text-align: center;
-      overflow: hidden;
-      transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
-      padding: 18px 16px 16px;
-      background-color: #fff;
-    }
     
-    .why-us-hidden-paragraph {
-      opacity: 1 !important;
-      max-height: 133.63px !important;
-      text-align: left;
-      margin-bottom: 0px !important;
-      overflow: hidden;
-      transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-      padding: 4px 0px 0px 0px !important;
-      margin-top: 0px !important;
-    } */
     .idc-adv-container{
       height: 214px !important;
     }
@@ -264,9 +243,8 @@
       margin-bottom: 100px !important;
     }
     .idc-awards-indicator-item{
-      padding: 5px 15px;
-      line-height: 20px !important;
-      font-size: 14px !important;
+      line-height: 22px !important;
+      font-size: 13px !important;
       margin: 0px !important;
       height: unset !important;
     }
@@ -789,6 +767,7 @@
 }
 #award-carousel .owl-item .card{
   border: none;
+  padding-top: 17px;
 }
 #award-carousel img.card-img-top {
     margin: 0px auto;
@@ -797,19 +776,20 @@
     height: 240px;
 }
 #award-carousel .owl-item .card-body {
-  padding-top: 32px;
     text-align: center;
+    padding: 0px;
 }
 
 .idc-awards-indicator-item{
-  line-height: 24px;
-  letter-spacing: -0.1%;
-  color: #3D3D3D;
-  border: none;
-  margin: 0px;
-  padding: 7px 40px;
-  font-size: 20px;
-  background-color: transparent;
+  width: 250px;
+    line-height: 24px;
+    letter-spacing: -0.1%;
+    color: #3D3D3D;
+    border: none;
+    margin: 0px;
+    padding: 15px 0px;
+    font-size: 20px;
+    background-color: transparent;
 }
 .idc-awards-indicator .row {
   width: fit-content !important;
@@ -878,8 +858,10 @@
     place-items: center;
     width: 242px;
     fill: var(--color-text);
-    background: var(--color-bg-accent);
+    background: #ffffff;
     aspect-ratio: 19 / 9;
+    border: 0.5px solid var(--secondary-color-40);
+    border-radius: 2px;
 }
 #partners .wrapper{
   display: flex;

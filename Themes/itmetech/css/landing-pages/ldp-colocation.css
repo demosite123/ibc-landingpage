@@ -994,12 +994,7 @@ a.newest-prom-info {
     text-align: justify;
 }
 
-.news-content-title a {
-    font-size: 1rem !important;
-    font-weight: 500 !important;
-    font-family: 'Sarabun', sans-serif !important;
-    color: #000000;
-}
+
 
 .service-info-card {
     flex: 50%;

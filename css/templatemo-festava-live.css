@@ -96,6 +96,7 @@
   --font-family-normal:           'PFBeauSansPro-Regular',"BeauSansPro", "Sarabun", sans-serif;
   --font-family-semibold:         'PFBeauSansPro-SemiBold',"BeauSansPro", "Sarabun", sans-serif;
   --font-family-bold:             'PFBeauSansPro-Bold',"BeauSansPro", "Sarabun", sans-serif;
+  --font-family-content:           "Sarabun", sans-serif;
 }
 
 html {
@@ -144,7 +145,7 @@ h4 {
 }
 
 p {
-  font-family: var(--body-font-family); 
+  font-family: var(--font-family-content); 
   font-size: var(--body-font-size);
   font-weight: var(--font-weight-normal);
   line-height: var(--body-line-height);
@@ -300,7 +301,12 @@ strong {
 .section-bg {
   background-color: var(--section-bg-color);
 }
-
+.section-title{
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  margin-bottom: 0%;
+  margin-top: 15px;
+}
 .section-overlay {
   background-color: var(--dark-color);
   position: absolute;
@@ -701,7 +707,7 @@ strong {
   text-align: left;
 }
 
-.why-us-content:hover {
+.why-us-content:hover, .why-us-content.hover-effect {
   max-height: 300px; /* Adjust this to fit the expanded content */
   box-shadow: 0px 1px 5px 0px rgb(221, 221, 221);
   transform: none;
@@ -709,11 +715,11 @@ strong {
   border: none;
 }
 
-.why-us-content:hover .why-us-title h4 span{
+.why-us-content:hover .why-us-title h4 span, .why-us-content.hover-effect .why-us-title h4 span{
   color: var(--primary-color-60);
 }
 
-.why-us-content:hover .why-us-hidden-paragraph {
+.why-us-content:hover .why-us-hidden-paragraph, .why-us-content.hover-effect .why-us-hidden-paragraph{
   opacity: 1;
   max-height: 200px; /* Arbitrary large value to allow full expansion */
   padding: 0px; /* Apply full padding on hover */
@@ -733,7 +739,11 @@ strong {
   AWARDS              
 -----------------------------------------*/
 #award-carousel .item {
-  margin: 20px;
+  margin: 20px 0px;
+  padding: 32px;
+}
+#award-carousel .owl-height {
+  height: fit-content;
 }
 #award-carousel .item:hover {
   box-shadow: 0px 1px 5px 0px rgb(221, 221, 221);
@@ -741,9 +751,41 @@ strong {
   transform-origin: 50% 50% 0px;
   z-index: 1000;
 }
+#award-carousel .owl-next{
+  
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-image: url(/img/next-slick.svg) !important;
+  right: -4%;
+}
+#award-carousel .owl-prev{
+  
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-image: url(/img/pre-slick.svg) !important;
+  left: -4%;
+}
+#award-carousel .owl-prev:before , #award-carousel .owl-next:before {
+  content: none;
+}
+#award-carousel .owl-next, #award-carousel .owl-next{
+  position: absolute;
+  top: 48%;
+  background-color: #F2F2F2;
+  color: #EE0033;
+  width: 42px;
+  height: 42px;
+  border: #DDDDDD 1px solid;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+  content: none;
+  display: flex;
+}
 /*---------------------------------------
   PARTNERS              
 -----------------------------------------*/
+
 /*---------------------------------------
   F&Q              
 -----------------------------------------*/
@@ -753,8 +795,8 @@ strong {
 
 .plus-to-x .horizontal, .plus-to-x .vertical {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 47%;
+  left: 82%;
   width: 14px;
   height: 1.5px;
   background-color: var(--secondary-color-90);
@@ -776,6 +818,9 @@ strong {
 
 #fandq .why-us-content:hover .vertical {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+#fandq p.why-us-hidden-paragraph {
+  padding-left: 16px;
 }
 /*---------------------------------------
   CERTIFICATE              
@@ -811,6 +856,8 @@ strong {
   content: none;
   display: flex;
 }
+
+
 .certificate-item{
   height: inherit;
   background-size: 200px;
@@ -869,10 +916,36 @@ strong {
     margin-bottom: 20px;
     border: 1px solid var(--secondary-color-40, rgb(242, 242, 242));
     border-radius: 2px;
+    min-height: 347px;
 }
 
-
-
+.news-list .news-head-wrapper .news-content{
+  margin-bottom: 0%;
+}
+.news-date-wrapper{
+  display: flex;
+  float: right;
+  width: fit-content;
+  flex-direction: row;
+  margin-right: 24px;
+}
+.news-list .news-wrapper .news-content-title a {
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -.1px;
+  line-height: 24px;
+  text-align: start;
+  color: var(--secondary-color-90);
+  text-decoration: none;
+  text-transform: none;
+}
+.news-list .news-head-wrapper {
+  margin-bottom: 15px !important;
+}
+.news-list .news-wrapper{
+  margin-top: 15px;
+}
 /*---------------------------------------
   ANIMATION               
 -----------------------------------------*/
