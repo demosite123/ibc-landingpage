@@ -669,7 +669,7 @@ strong {
   WHYUS              
 -----------------------------------------*/
 .whyus-wrapper {
-  position: absolute; top: 18%;
+  position: relative; top: 18%;
 }
 .why-us-content {
   width: inherit;
@@ -782,6 +782,9 @@ strong {
   content: none;
   display: flex;
 }
+#awards .section-padding-small{
+  padding-top: 0px;
+}
 /*---------------------------------------
   PARTNERS              
 -----------------------------------------*/
@@ -810,6 +813,10 @@ strong {
 
 .plus-to-x .vertical {
   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+#fandq .why-us-content:hover .row {
+  border-bottom: 1px solid var(--secondary-color-40, rgb(242, 242, 242));
 }
 
 #fandq .why-us-content:hover .horizontal {
@@ -922,6 +929,9 @@ strong {
 
 .news-list .news-head-wrapper .news-content{
   margin-bottom: 0%;
+}
+.news-date-wrapper img{
+  padding-right: 8px;
 }
 .news-date-wrapper{
   display: flex;
@@ -1115,11 +1125,11 @@ strong {
     padding: 10px 20px;
   }
   .whyus-wrapper {
-    position: absolute; top: 5% !important;
+    position: unset; top: 5% !important;
   }
   .solution-container-mobile .img-mobile{
     background-size: cover !important;
-    height: 80vh;
+    height: 600px !important;
   }
   .solution-container-mobile .img-mobile h3{
     color: var(--secondary-color-10) !important;
@@ -1160,7 +1170,7 @@ strong {
     padding: 5px 12px;
   }
   .whyus-wrapper {
-    position: absolute; top: 5% !important;
+    position: unset; top: 5% !important;
   }
   .solution-container-mobile .img-mobile{
     background-size: cover !important;

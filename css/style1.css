@@ -40,7 +40,18 @@
     .idc-adv-container {
         height: 312px;
     }
-    
+    .solution-container {
+      height: 550px;
+    }
+    .slide-item {
+      height: 250px !important;
+    }
+  #award-carousel img.card-img-top {
+      margin: 0px auto;
+      display: block;
+      width: 200px !important;
+      height: 200px  !important;
+  }
   }
   /* Large  */
   @media (max-width: 1199px) and (min-width: 992px) {
@@ -63,7 +74,9 @@
     .navbar-expand-lg .navbar-nav .nav-link {
       padding: 10px 0px !important;
     }
-    
+    .solution-container {
+      height: 550px;
+    }
   }
   /* Medium */
   @media (max-width: 991px) and (min-width: 768px) {
@@ -186,7 +199,11 @@
       line-height: 22px;
       letter-spacing: -0.1%;
     }
-    #partners .logo-partner{width: 184px; height: 90.35px !important; }
+    #partners .logo-partner {
+      margin: 8px 8px;
+      width: 167px;
+      height: 74.35px !important;
+    }
     .certificate-item{
       height: inherit;
       background-size: 81px !important;
@@ -222,7 +239,7 @@
       text-transform: uppercase !important;
       padding-left: 0%;
       padding-right: 0px;
-      margin-bottom: 10px !important;
+      margin-bottom: 32px !important;
     }
     .idc-form-advice{
       padding: 35px 17px !important;
@@ -239,9 +256,7 @@
     .service-section .section-title{
       margin-bottom: 40px !important;
     }
-    .ceritificate-section .section-title{
-      margin-bottom: 100px !important;
-    }
+    
     .idc-awards-indicator-item{
       line-height: 22px !important;
       font-size: 13px !important;
@@ -645,6 +660,13 @@
   background-size: cover;
   background-position: center;
 }
+.ceritificate-section{
+  background-image: url('../img/advice-bg.jpg');
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .grow-wrap {
   /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
@@ -767,7 +789,6 @@
 }
 #award-carousel .owl-item .card{
   border: none;
-  padding-top: 17px;
 }
 #award-carousel img.card-img-top {
     margin: 0px auto;
@@ -853,7 +874,7 @@
   transform-origin: 50% 50% 0px;
 }
 #partners .logo-partner{height: 100.35px; background-color: #ffffff;}
-#partners .marquee .logo-partner{
+#partners .marquee .logo-partner, #partners .marquee_mob .logo-partner{
   display: grid; 
     place-items: center;
     width: 242px;
