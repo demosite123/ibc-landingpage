@@ -290,6 +290,11 @@
         height: 135px !important;
         width: 130px !important;
     }
+    #partners .logo-partner {
+      margin: 6px 5px;
+      width: 135px !important;
+      height: 59.35px !important;
+  }
 }
 .idc-primary-90{
     color: #620915;
