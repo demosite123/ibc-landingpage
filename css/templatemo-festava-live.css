@@ -734,7 +734,9 @@ strong {
 .solution-active p, .solution-active h3{
   color: white !important;
 }
-
+#solution-mobile-carousel .owl-nav {
+  display: none;
+}
 /*---------------------------------------
   AWARDS              
 -----------------------------------------*/

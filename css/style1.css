@@ -201,8 +201,11 @@
     }
     #partners .logo-partner {
       margin: 8px 8px;
-      width: 167px;
+      width: 167px !important;
       height: 74.35px !important;
+    }
+    #partners .marquee_mob .logo-partner{
+      display: unset !important;
     }
     .certificate-item{
       height: inherit;
@@ -638,7 +641,7 @@
 }
 
 .slide-item {
-	background-color: transparent;
+	background-color: #FFFFFF;
   display: flex !important;
   justify-content: center;
   align-items: center;
