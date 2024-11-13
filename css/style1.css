@@ -76,6 +76,9 @@
     .solution-container {
       height: 550px;
     }
+    .navbar-collapse .navbar-nav li{
+      border-bottom: var(--secondary-color-40) 1px solid !important;
+    }
   }
   /* Medium */
   @media (max-width: 991px) and (min-width: 768px) {

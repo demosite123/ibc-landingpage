@@ -682,11 +682,11 @@ a.idc-btn-get-advice {
     padding: 5px 15px;
 }
 
-.solution-container {
+/* .solution-container {
     height: 700px;
     display: flex;
     overflow: hidden;
-}
+} */
 
     .solution-container:has(.img.solution-active) .img:not(.solution-active) {
         display: flex;
@@ -711,7 +711,7 @@ a.idc-btn-get-advice {
 }
 
 .img {
-    height: 100%;
+    height: calc(80vh - 100px);
     width: calc(100% / 4);
     object-fit: cover;
     overflow: hidden;
