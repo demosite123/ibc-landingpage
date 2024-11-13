@@ -832,7 +832,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture2.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -844,7 +844,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture3.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -856,7 +856,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture4.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -868,7 +868,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture5.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -880,7 +880,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture6.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -892,7 +892,7 @@
                                     </div>
                                     
                                     <div class="slide-item" onclick="alert('ok');" >
-                                        <div class="certificate-item" style="background-image: url(img/Ceft.svg)">
+                                        <div class="certificate-item" style="background-image: url(img/Picture7.png)">
                                             <div class="first">
                                             </div>
                                         <div class="second">
@@ -1611,12 +1611,22 @@ T e m p l a t e M o
     <script>
         const solutionImages = document.querySelectorAll(".img");
         var listData = [
-                { groupId: 'group1', img: 'img/award.svg', year: '2024', name : 'Cybersecurity Excellence Awards 2024', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
-                { groupId: 'group1', img: 'img/award.svg', year: '2024', name : 'Cybersecurity Excellence Awards 2024', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
-                { groupId: 'group1', img: 'img/award.svg', year: '2022', name : 'Cybersecurity Excellence Awards 2022', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
-                { groupId: 'group2', img: 'img/award.svg', year: '2022', name : 'Cybersecurity Excellence Awards 2022', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
-                { groupId: 'group2', img: 'img/award.svg', year: '2023', name : 'Cybersecurity Excellence Awards 2023', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
-                { groupId: 'group3', img: 'img/award.svg', year: '2023', name : 'Cybersecurity Excellence Awards 2023', content :'Cybersecurity Excellence Awards 2024 Cybersecurity Excellence Awards 2024Cybersecurity Excellence Awards 2024.' },
+                { groupId: 'group1', img: 'img/Picture8.png', year: '2021', name : 'Gold Award at the IT World Awards 2021', 
+                content :'Globee® Business Awards' },
+                { groupId: 'group1', img: 'img/award.svg', year: '2024', name : 'Cybersecurity Excellence Awards 2024', 
+                content :'Cybersecurity Insiders' },
+                { groupId: 'group1', img: 'img/Picture9.png', year: '2024', name : 'Gold Award in the category of “Cloud Infrastructure and Platform Services”', 
+                content :'Globee Award for Technology' },
+                { groupId: 'group2', img: 'img/Picture10.png', year: '2021', name : 'Silver Award at the IT World Awards 2021', 
+                content :'Globee® Business Awards' },
+                { groupId: 'group2', img: 'img/award.svg', year: '2021', name : 'Cybersecurity Excellence Awards 2024', 
+                content :'Cybersecurity Insiders' },
+                { groupId: 'group2', img: 'img/Picture11.png', year: '2023', name : 'Gold Award in the category of “Cloud Infrastructure and Platform Services”', 
+                content :'Globee Award for Technology' },
+                { groupId: 'group3', img: 'img/Picture12.png', year: '2023', name : 'Bronze Award at the Asia-Pacific Stevie Awards', 
+                content :'Asia-Pacific Stevie Awards' },
+                { groupId: 'group3', img: 'img/award.svg', year: '2020', name : 'Top Data Center Companies – 2020', 
+                content :'APAC CIO Outlook' },
             ];
         document.addEventListener('DOMContentLoaded', () => {
             const fadeTexts = document.querySelectorAll('.fade-text');
@@ -1752,9 +1762,9 @@ T e m p l a t e M o
                     <div class="card">
                         <img src="${item.img}" class="card-img-top" alt="${item.img}">
                         <div class="card-body">
-                            <h5 class="card-title idc-secondary-70" style="font-size: 30px; font-weight: bold; line-height: 36px;">${item.year}</h5>
+                            <h5 class="card-title idc-secondary-90" style="font-size: 30px; font-weight: bold; line-height: 36px;">${item.year}</h5>
                             <h5 class="card-title" style="margin: 16px;">${item.name}</h5>
-                            <p class="card-text idc-secondary-60">${item.content}</p>
+                            <p class="card-text idc-secondary-90">${item.content}</p>
                             </div>
                         </div>
                 </div>` ]);

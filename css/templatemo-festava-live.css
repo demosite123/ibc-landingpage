@@ -753,6 +753,9 @@ strong {
   transform-origin: 50% 50% 0px;
   z-index: 1000;
 }
+#award-carousel .item:hover .card-title:not(.idc-secondary-90) {
+  color: var(--primary-color-60);
+}
 #award-carousel .owl-next{
   
   background-repeat: no-repeat !important;
